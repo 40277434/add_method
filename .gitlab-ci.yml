@@ -1,0 +1,8 @@
+image: docker:19.03.12
+
+test:app:
+  script:
+  - docker --version
+  - docker login registry.hal.davecutting.uk --username 40277434 --password Wzfqy1314
+  - docker build -t registry.hal.davecutting.uk/40277434/webcalc-add .
+  - docker push registry.hal.davecutting.uk/40277434/webcalc-add

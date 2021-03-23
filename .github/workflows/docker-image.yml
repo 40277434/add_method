@@ -17,6 +17,6 @@ jobs:
     - name: Build the Docker image
       run: |
         docker --version
-        docker login registry.hal.davecutting.uk --username 40277434 --password Wzfqy1314
-        docker build -t registry.hal.davecutting.uk/40277434/webcalc-add .
+        docker login --username 40277434 --password Wzfqy1314
+        docker build -t 40277434/webcalc-add .
         docker push 40277434/webcalc-add
